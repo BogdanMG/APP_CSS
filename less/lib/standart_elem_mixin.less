@@ -1,0 +1,63 @@
+.header(@w,@h){
+width: @w auto; 
+height: @h; 
+}
+
+@header: header();
+
+
+.content_hdr(@fs,@ffm,@clr,@mrgrg){
+float: left; 
+text-decoration: none; 
+font-size: @fs;
+font-family: @ffm;
+margin-right: @mrgrg;
+color: @clr; 
+}
+
+
+
+
+
+.menu(@w, @h){
+ @header();
+}
+
+
+.content_mn(@fs,@ffm,@clr,@mrgrg){
+font-size: @fs;
+font-family: @ffm;
+text-decoration: none; 
+margin-bottom: @mrgrg;
+color: @clr; 
+}
+
+
+
+.footer(@pos){
+@header(); 
+position: @pos;
+}
+
+
+
+.content_ftr(@fl,@fs,@ffm,@mrg,@clr){
+float: @fl;
+text-decoration: none; 
+font-size: @fs;
+font-family: @ffm;
+margin: @mrg;
+color: @clr; 
+}
+
+
+
+
+.div(@pos,@w,@h,@bclr){
+position: @pos; 
+width: @w; 
+height: @h;
+background-color: @bclr; 
+}
+
+

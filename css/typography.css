@@ -1,0 +1,60 @@
+abbr {
+  font-family: Roboto-Medium sans-serif;
+}
+address {
+  font-family: RobotoCondensed_LightItalic sans-serif;
+}
+dt {
+  font-family: RobotoCondensed-Light sans-serif;
+}
+dd {
+  font-family: RobotoCondensed_LightItalic sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Roboto-Black sans-serif;
+}
+figcaption {
+  font-family: RobotoCondensed-Light sans-serif;
+}
+p {
+  font-family: RobotoCondensed-Light sans-serif;
+  font-size: 16px;
+}
+blockquote,
+code {
+  font-family: Roboto-ThinItalic sans-serif;
+  font-size: 13px;
+}
+em {
+  font-family: Roboto-Thin sans-serif;
+}
+label {
+  font-family: Roboto-Regular sans-serif;
+  font-size: 15px;
+}
+legend {
+  font-family: Roboto-Light sans-serif;
+}
+ol,
+li {
+  font-family: Roboto-LightItalic sans-serif;
+  font-size: 16px;
+}
+mark {
+  font-family: Roboto-Light sans-serif;
+}
+strong {
+  font-family: Roboto-Bold sans-serif;
+}
+.lovercase-txt {
+  font-family: RobotoCondensed_LightItalic sans-serif;
+}
+.uppercase-txt {
+  font-family: RobotoCondensed_LightItalic sans-serif;
+  text-transform: uppercase;
+}

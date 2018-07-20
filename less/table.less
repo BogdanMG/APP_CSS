@@ -1,0 +1,66 @@
+@import"lib/colors";
+
+//mixin
+.from_alle_cells(@width,@clr,@bclr){
+border-bottom: solid;
+border-bottom-color: clr;
+border-bottom-width: width;
+background-color: bclr;
+}
+
+//variable
+@border:  1px;
+@bottom-color:  __Grey[_g300];
+
+th{
+.from_alle_cells(2px,__Grey[_g500],__Grey[_g100]);
+}
+//td
+.simple-cell{
+.from_alle_cells(@border,@bottom-color,__Grey[_g100]);
+}
+
+
+.cell-white{
+.from_alle_cells(@border,@bottom-color,__BM[_white]);
+
+}
+
+.cell-gray{
+.from_alle_cells(@border,@bottom-color,__Grey[_g400]);
+}
+
+.cell-frame{
+.from_alle_cells(@border,@bottom-color,__Grey[_g50]);
+border-left: @border;
+border-top: @border;
+border-right: @border;
+}
+
+
+.cell-right{
+.from_alle_cells(@border,@bottom-color,__Teal[_t100]);
+}
+
+.cell-implemented{
+.from_alle_cells(@border,@bottom-color,__Cyan[_c100]);
+}
+
+
+.cell-error{
+.from_alle_cells(@border,@bottom-color,__Red[_r100]);
+}
+
+
+.borderless-cell{
+border: none;
+background-color: __BM[_white];
+}
+
+
+.hover-cell{
+    .cell-white(); 
+      &:hover {
+        .simple-cell();   
+      }
+}

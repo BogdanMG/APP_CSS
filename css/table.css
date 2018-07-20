@@ -1,0 +1,68 @@
+@import "lib/colors";
+th {
+  border-bottom: solid;
+  border-bottom-color: clr;
+  border-bottom-width: width;
+  background-color: bclr;
+}
+.simple-cell {
+  border-bottom: solid;
+  border-bottom-color: clr;
+  border-bottom-width: width;
+  background-color: bclr;
+}
+.cell-white {
+  border-bottom: solid;
+  border-bottom-color: clr;
+  border-bottom-width: width;
+  background-color: bclr;
+}
+.cell-gray {
+  border-bottom: solid;
+  border-bottom-color: clr;
+  border-bottom-width: width;
+  background-color: bclr;
+}
+.cell-frame {
+  border-bottom: solid;
+  border-bottom-color: clr;
+  border-bottom-width: width;
+  background-color: bclr;
+  border-left: 1px;
+  border-top: 1px;
+  border-right: 1px;
+}
+.cell-right {
+  border-bottom: solid;
+  border-bottom-color: clr;
+  border-bottom-width: width;
+  background-color: bclr;
+}
+.cell-implemented {
+  border-bottom: solid;
+  border-bottom-color: clr;
+  border-bottom-width: width;
+  background-color: bclr;
+}
+.cell-error {
+  border-bottom: solid;
+  border-bottom-color: clr;
+  border-bottom-width: width;
+  background-color: bclr;
+}
+.borderless-cell {
+  border: none;
+  background-color: __BM[_white];
+}
+.hover-cell {
+  border-bottom: solid;
+  border-bottom-color: clr;
+  border-bottom-width: width;
+  background-color: bclr;
+}
+.hover-cell:hover {
+  border-bottom: solid;
+  border-bottom-color: clr;
+  border-bottom-width: width;
+  background-color: bclr;
+}

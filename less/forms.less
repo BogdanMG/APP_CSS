@@ -1,0 +1,234 @@
+//@import"lib/form_mixin";
+
+@width: 15px;
+@height:  @width;
+@zero_value:  0;
+@transition:  all 0.3s ease-in-out;
+@transform_scale:  .75;
+@transform_rotate:  -45deg;
+
+@red:  #e51c23;
+@purple:  #9c27b0;
+@deep_purple: #673ab7;
+@indigo:  #3f51b5;
+@blue: #5677fc;
+@light_blue:  #03a9f4;
+@cyan:  #00bcd4;
+@teal:  #009688;
+@green:  #259b24;
+
+
+.tf_form(@wdth,@clrbk,@clrbr){
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background-color: @clrbk;
+  border-bottom-color: @clrbr; 
+  border-bottom-width: @wdth; 
+  }
+  
+    
+  
+  .label_move(@val1,@val2,@size,@clr){
+  top: @val; 
+  left: @val2;
+  font-size: @size; 
+  color: @clr; 
+  }
+
+
+
+*{
+ font-family: RobotoMedium, sans-serif;
+ font-size: 15px;
+}
+
+.date-field,.dt-field,.dtl-field,.email-field,.month-field,.number-field,.password-field,.search-field,.tel-field,.text-field,.time-field,.url-field,.week-field,.txtarea-field,.select-field{
+.tf_form(2px,#fff,#ccc);
+}
+
+.color-field{
+background-color: rgba(204, 204, 204, 0);
+width: 40px;
+height: 40px;
+border: none;
+}
+select option {
+background-color: #fff;
+border: none;
+box-shadow: 0px 4px 8px #969696;
+}
+
+
+
+.checkbox_APP{
+  position: relative;
+  margin: 25px;
+}
+.checkbox_APP:focus{
+  outline-color: #fff;
+}
+
+.checkbox_APP:before{
+  border: 2px solid #ccc;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: @height;
+  position: absolute;
+  -moz-transition: @transition;
+  -o-transition: @transition;
+  -webkit-transition: @transition;
+  transition: @transition;
+  width: @width;
+  z-index: 1;
+}
+
+.material_checkbox:checked:before{
+  border-top-style: none;
+  border-right-style: none;
+  height: 10px;
+  -moz-transform: rotate(@transform_rotate);
+  -ms-transform: rotate(@transform_rotate);
+  -o-transform: rotate(@transform_rotate);
+  -webkit-transform: rotate(@transform_rotate);
+  transform: rotate(@transform_rotate);
+}
+
+.material_checkbox:after{
+  background: #fff;
+  content: "";
+  display: block;
+  height: @height;
+  position: absolute;
+  top: @zero_value;
+  width: @width;
+  z-index: @zero_value;
+}
+
+.checkbox_APP_red:checked:before{
+border-color: @red;
+}
+
+.checkbox_APP_purple:checked:before{
+border-color: @purple;
+}
+
+.checkbox_APP_deep_purple:checked:before{
+border-color: @deep_purple;
+}
+
+.checkbox_APP_indigo:checked:before{
+border-color: @indigo;
+}
+
+.checkbox_APP_blue:checked:before{
+border-color: @blue;
+}
+
+.checkbox_APP_light_blue:checked:before{
+border-color: @light_blue;
+}
+
+.checkbox_APP_cyan:checked:before{
+border-color: @cyan;
+}
+
+.checkbox_APP_teal:checked:before{
+border-color: @teal;
+}
+
+.checkbox_APP_green:checked:before{
+border-color: @green;
+}
+
+  .radio_APP{
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: @zero_value 2px 5px rgba(0,0,0,.4);
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  }
+
+.radio_APP{
+  position: relative;
+  margin: 25px;
+}
+
+.radio_APP:before{
+  border: 3px solid #ccc;
+  border-radius: 100%;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: @height;
+  position: absolute;
+  -moz-transition: @transition;
+  -o-transition: @transition;
+  -webkit-transition: @transition;
+  transition: @transition;
+  width: @width;
+  z-index: 1;
+}
+
+.radio_APP:checked{
+  -moz-transform: scale(@transform_scale);
+  -ms-transform: scale(@transform_scale);
+  -o-transform: scale(@transform_scale);
+  -webkit-transform: scale(@transform_scale);
+  transform: scale(@transform_scale);
+  background: #ccc;
+}
+
+.radio_APP:after{
+  background: #fff;
+  content: "";
+  display: block;
+  height: @height;
+  position: absolute;
+  top: @zero_value;
+  width: @width;
+  z-index: @zero_value;
+}
+
+.radio_APP_red:checked:before{
+ background-color:  @red;
+}
+
+.radio_APP_purple:checked:before{
+ background-color: @purple;
+}
+
+.radio_APP_deep_purple:checked:before{
+ background-color: @deep_purple;
+}
+
+.radio_APP_indigo:checked:before{
+ background-color: @indigo;
+}
+
+.radio_APP_blue:checked:before{
+ background-color: @blue;
+}
+
+.radio_APP_light_blue:checked:before{
+ background-color: @light_blue;
+}
+
+.radio_APP_cyan:checked:before{
+ background-color: @cyan;
+}
+
+.radio_APP_teal:checked:before{
+ background-color: @teal;
+}
+
+.radio_APP_green:checked:before{
+ background-color: @green;
+}
+
+
+
+
+

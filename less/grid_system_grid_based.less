@@ -1,0 +1,50 @@
+.APP_container_grid{
+ display: grid;
+ grid-template-columns: 3fr 3fr 3fr 3fr 2fr 2fr 2fr 2fr 1fr 1fr 1fr 1fr; 
+ justify-items: start; 
+ align-items: start; 
+ grid-template-areas: ".APP_gcol_1", ".APP_gcol_2", ".APP_gcol_3", ".APP_gcol_4",
+ ".APP_gcol_5", ".APP_gcol_6", ".APP_gcol_7", ".APP_gcol_8",
+ ".APP_gcol_9", ".APP_gcol_10", ".APP_gcol_11", ".APP_gcol_12";
+    
+}
+
+
+
+
+
+
+
+/*.APP_gcol_1
+.APP_gcol_2
+.APP_gcol_3
+.APP_gcol_4
+.APP_gcol_5
+.APP_gcol_6
+.APP_gcol_7
+.APP_gcol_8
+.APP_gcol_9
+.APP_gcol_10
+.APP_gcol_11
+.APP_gcol_12*/
+
+
+
+
+
+@media(min-width: 720px) {
+.APP_container_grid {
+grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
+}
+
+}
+
+
+
+
+
+@media(min-width: 480px) {
+.APP_container_grid {
+ grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+}
+}

@@ -1,0 +1,30 @@
+.APP_container_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-direction: flex-start;
+  flex-grow: 1 250px;
+}
+.APP_fcol_1 .APP_fcol_2 .APP_fcol_3 .APP_fcol_4 {
+  flex: flex 1;
+}
+.APP_fcol_5 .APP_fcol_6 .APP_fcol_7 .APP_fcol_8 {
+  flex: flex 2;
+}
+.APP_fcol_9 .APP_fcol_10 .APP_fcol_11 .APP_fcol_12 {
+  flex: flex 3;
+}
+@media (min-width: 720px) {
+  .APP_container_flex {
+    flex-direction: columns;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+@media (min-width: 480px) {
+  .APP_container_flex {
+    flex-direction: columns;
+    margin: 0px;
+    padding: 0px;
+  }
+}

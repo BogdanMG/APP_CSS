@@ -1,0 +1,177 @@
+* {
+  font-family: RobotoMedium, sans-serif;
+  font-size: 15px;
+}
+.date-field,
+.dt-field,
+.dtl-field,
+.email-field,
+.month-field,
+.number-field,
+.password-field,
+.search-field,
+.tel-field,
+.text-field,
+.time-field,
+.url-field,
+.week-field,
+.txtarea-field,
+.select-field {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background-color: #fff;
+  border-bottom-color: #ccc;
+  border-bottom-width: 2px;
+}
+.color-field {
+  background-color: rgba(204, 204, 204, 0);
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+select option {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 4px 8px #969696;
+}
+.checkbox_APP {
+  position: relative;
+  margin: 25px;
+}
+.checkbox_APP:focus {
+  outline-color: #fff;
+}
+.checkbox_APP:before {
+  border: 2px solid #ccc;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 15px;
+  position: absolute;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 15px;
+  z-index: 1;
+}
+.material_checkbox:checked:before {
+  border-top-style: none;
+  border-right-style: none;
+  height: 10px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.material_checkbox:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  width: 15px;
+  z-index: 0;
+}
+.checkbox_APP_red:checked:before {
+  border-color: #e51c23;
+}
+.checkbox_APP_purple:checked:before {
+  border-color: #9c27b0;
+}
+.checkbox_APP_deep_purple:checked:before {
+  border-color: #673ab7;
+}
+.checkbox_APP_indigo:checked:before {
+  border-color: #3f51b5;
+}
+.checkbox_APP_blue:checked:before {
+  border-color: #5677fc;
+}
+.checkbox_APP_light_blue:checked:before {
+  border-color: #03a9f4;
+}
+.checkbox_APP_cyan:checked:before {
+  border-color: #00bcd4;
+}
+.checkbox_APP_teal:checked:before {
+  border-color: #009688;
+}
+.checkbox_APP_green:checked:before {
+  border-color: #259b24;
+}
+.radio_APP {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+.radio_APP {
+  position: relative;
+  margin: 25px;
+}
+.radio_APP:before {
+  border: 3px solid #ccc;
+  border-radius: 100%;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 15px;
+  position: absolute;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 15px;
+  z-index: 1;
+}
+.radio_APP:checked {
+  -moz-transform: scale(0.75);
+  -ms-transform: scale(0.75);
+  -o-transform: scale(0.75);
+  -webkit-transform: scale(0.75);
+  transform: scale(0.75);
+  background: #ccc;
+}
+.radio_APP:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  width: 15px;
+  z-index: 0;
+}
+.radio_APP_red:checked:before {
+  background-color: #e51c23;
+}
+.radio_APP_purple:checked:before {
+  background-color: #9c27b0;
+}
+.radio_APP_deep_purple:checked:before {
+  background-color: #673ab7;
+}
+.radio_APP_indigo:checked:before {
+  background-color: #3f51b5;
+}
+.radio_APP_blue:checked:before {
+  background-color: #5677fc;
+}
+.radio_APP_light_blue:checked:before {
+  background-color: #03a9f4;
+}
+.radio_APP_cyan:checked:before {
+  background-color: #00bcd4;
+}
+.radio_APP_teal:checked:before {
+  background-color: #009688;
+}
+.radio_APP_green:checked:before {
+  background-color: #259b24;
+}

@@ -1,0 +1,77 @@
+@import"lib/colors";
+
+//Variable
+@br_rd:  50%;
+@width: 70px;
+@height: 70px;
+@s_t: 60px;
+@tr_t: 30px;
+
+//Mixin
+.b3_c(){
+border: none;
+box-shadow: 0px 4px 8px #969696;  
+background-color: __Teal[_t400];
+cursor: pointer;   
+}
+//Classes
+.float-btn(){
+.b3_c();
+border-radius: @br_rd;
+width: @width;
+height: @height;
+}
+
+
+.small-btn{
+.b3_c();
+width: 120px;
+height: 50px;
+}
+
+.middle-btn{
+.b3_c();
+width: 160px;
+height: @height;
+}
+
+.big-btn{
+.b3_c();
+width: 200px;
+height: 90px;
+}
+.flat-btn {
+border: none;
+cursor: pointer;
+background-color: rgba(0, 245, 255, 0);
+width: 100px;
+height: @tr_t;
+}
+
+&:hover{
+background-color: #d4d4d4;
+}
+
+
+.submit{ 
+.b3_c();
+width: 90px;
+height: @tr_t;
+}
+
+.oneclick-btn_sqr{ 
+.b3_c();
+width: @s_t;
+height: @s_t;
+}
+
+.oneclick-btn_c{
+.b3_c();
+border-radius: @br_rd;
+width: @width;
+height: @height;
+}
+
+
+
+

@@ -1,0 +1,124 @@
+.ft_keyframes(@name,@type1,@val1,@type2,@val2){
+-webkit-keyframes @{name} {
+    from {
+        @{type1}: @val1;
+    }
+    to {
+       @{type2}: @val2;
+    }
+}
+-moz-keyframes @{name} {
+    from {
+        @{type1}: @val1;
+    }
+    to {
+        @{type2}: @val2;
+    }
+    
+}
+-o-keyframes @{name} {
+    from {
+        @{type1}: @val1;
+    }
+    to {
+        @{type2}: @val2;
+    }
+    
+}
+}
+
+.tr_keyframes(@name,@type1,@val1,@type2,@val2){
+-webkit-keyframes @{name} {
+    from {
+        transform: @type1 (@val1);
+    }
+    to {
+        transform: @type2 (@val2);
+    }
+}
+-moz-keyframes @{name} {
+    from {
+        transform: @type1 (@val1);
+    }
+    to {
+        transform: @type2 (@val2);
+    }
+    
+}
+-o-keyframes @{name} {
+    from {
+        transform: @type1 (@val1);
+    }
+    to {
+        transform: @type2 (@val2);
+    }
+    
+}
+}
+
+.scl_keyframes(@name,@type1,@type2,@val1,@val2,@val3,@val4,){
+-webkit-keyframes @{name} {
+    from {
+        @{type1}: @val; 
+        @{type2}: @va2;
+            }
+    to {
+       width: @val3;
+       height: @val4;
+    }
+}      
+-moz-keyframes @{name} {
+   from {
+       @{type1}: val;
+       @{type2}: va2; 
+    }
+    to {
+        width: @al3;
+       height: @val4;
+    }
+    
+}
+-o-keyframes @{name} {
+    from {
+         @{type1}: @val; 
+         @{type2}: @val2; 
+        }
+    to {
+       width: @val3;
+       height: @val4;
+    }
+    
+}
+}
+
+.def_box-shadow(@clr,@val){
+box-shadow: @clr 0px 4px 10px;
+z-index: @val;
+}
+
+
+
+.big_box-shadow(@clr,@val){
+box-shadow: @clr 0px 5px 12px;
+z-index: @val; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
